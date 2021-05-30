@@ -1,6 +1,5 @@
 const Logo = (props) => (
-  <h2
-    color="white">
+  <h2>
     RNSIT
   </h2>
   // <img
