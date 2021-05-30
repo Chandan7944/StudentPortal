@@ -34,8 +34,8 @@ const Login = () => {
         <Container maxWidth="sm">
           <Formik
             initialValues={{
-              email: 'demo@devias.io',
-              password: 'Password123'
+              email: '',
+              password: ''
             }}
             validationSchema={Yup.object().shape({
               email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
@@ -74,37 +74,8 @@ const Login = () => {
                   container
                   spacing={3}
                 >
-                  <Grid
-                    item
-                    xs={12}
-                    md={6}
-                  >
-                    <Button
-                      color="primary"
-                      fullWidth
-                      startIcon={<FacebookIcon />}
-                      onClick={handleSubmit}
-                      size="large"
-                      variant="contained"
-                    >
-                      Login with Facebook
-                    </Button>
-                  </Grid>
-                  <Grid
-                    item
-                    xs={12}
-                    md={6}
-                  >
-                    <Button
-                      fullWidth
-                      startIcon={<GoogleIcon />}
-                      onClick={handleSubmit}
-                      size="large"
-                      variant="contained"
-                    >
-                      Login with Google
-                    </Button>
-                  </Grid>
+                  
+                  
                 </Grid>
                 <Box
                   sx={{
@@ -112,13 +83,7 @@ const Login = () => {
                     pt: 3
                   }}
                 >
-                  <Typography
-                    align="center"
-                    color="textSecondary"
-                    variant="body1"
-                  >
-                    or login with email address
-                  </Typography>
+                  
                 </Box>
                 <TextField
                   error={Boolean(touched.email && errors.email)}
@@ -155,7 +120,7 @@ const Login = () => {
                     type="submit"
                     variant="contained"
                   >
-                    Sign in now
+                    Sign in 
                   </Button>
                 </Box>
                 <Typography

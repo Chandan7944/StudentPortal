@@ -62,10 +62,11 @@ const Register = () => {
               values
             }) => (
               <form onSubmit={handleSubmit}>
-                <Box sx={{ mb: 3 }}>
+                <Box sx={{ mb: 0 }}>
                   <Typography
                     color="textPrimary"
                     variant="h2"
+                    margin-top="20px"
                   >
                     Create new account
                   </Typography>
